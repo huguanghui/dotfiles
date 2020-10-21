@@ -1,0 +1,43 @@
+" 设置 gutentags 模块
+let g:gutentags_modules = ['ctags', 'cscope']
+" 设置搜索工程的标志
+let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+
+" 所生成的数据文件名称
+let g:gutentags_ctags_tagfile = '.tags'
+
+" 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中, 避免目录污染
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+
+if !isdirectory(s:vim_tags)
+    silent! call mkdir (s:vim_tags, 'p')
+endif
+
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
+let g:gutentags_ctags_extra_args = ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args = ['--c-kinds=+px']
+
+if has ("cscope")
+    " 设置cscope和ctags对ctrl+] :ta和vim -t的兼容
+    set cscopetag
+    " cscope优先于ctags
+    set csto=0
+    " 在当前目录添加cscope数据库
+    if filereadable("cscope.out")
+        cs add cscope.out
+    elseif $CSCOPE_DB != ""
+        cs add $CSCOPE_DB
+    endif
+    " 显示信息当其他的cscope数据库被添加
+    set cscopeverbose
+    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+    nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+    nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+    nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+endif
+

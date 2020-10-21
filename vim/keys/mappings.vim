@@ -23,3 +23,15 @@ map <F4> :tabnew .<CR>
 nnoremap <leader>g :grep <c-r><c-w> */**<cr>
 
 inoremap ' ''<ESC>i
+
+map <silent> <F2> :TlistToggle<CR>
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
+nmap <F8> :TagbarToggle<CR>
+imap <F6> <C-x><C-o>
+nmap <F5> :!go run main.go<CR>
+
+nnoremap <silent> <Leader>ag :Ack! <C-R><C-W><CR>
+nnoremap <silent> <c-p> :Files <CR>
+nnoremap <silent> <Leader>f :LeaderfFunction!<CR>
+nnoremap <silent> <c-e> :Buffers <CR>
