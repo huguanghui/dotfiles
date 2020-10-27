@@ -33,6 +33,7 @@ Plug 'Shougo/echodoc.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/DrawIt'
+Plug 'liuchengxu/vim-which-key'
 "Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python --enable-go --enable-bash'}
 
 call plug#end()
