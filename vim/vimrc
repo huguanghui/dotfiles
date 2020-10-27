@@ -19,4 +19,6 @@ source $HOME/.vim/plug-config/editorconfig-vim.vim
 source $HOME/.vim/plug-config/taglist.vim
 source $HOME/.vim/plug-config/echodoc.vim
 " vimwiki
-source $HOME/.vim/plug-config/vimwiki.vim
+if has_key(plugs, 'vimwiki')
+ source $HOME/.vim/plug-config/vimwiki.vim
+endif
