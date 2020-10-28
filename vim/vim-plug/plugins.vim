@@ -34,6 +34,8 @@ Plug 'justinmk/vim-dirvish'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/DrawIt'
 Plug 'liuchengxu/vim-which-key'
+" 撤销树功能
+Plug 'mbbill/undotree'
 "Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python --enable-go --enable-bash'}
 
 call plug#end()

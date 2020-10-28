@@ -1,8 +1,9 @@
 " 映射配置
 
 "键盘命令
-" leader 键
-let g:mapleader=","
+" leader 键 设为空格
+let g:mapleader=" "
+nnoremap <Space> <Nop>
 inoremap jj <esc>`^
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
