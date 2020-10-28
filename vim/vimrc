@@ -8,6 +8,7 @@ source $HOME/.vim/general/settings.vim
 
 " 按键映射
 source $HOME/.vim/keys/mappings.vim
+source $HOME/.vim/keys/which-key.vim
 
 " 插件配置
 "source $HOME/.vim/plug-config/*.vim
