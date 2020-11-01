@@ -12,9 +12,12 @@ let g:gutentags_modules = []
 if executable('ctags')
     let g:gutentags_modules += ['ctags']
 endif
-if executable('gtags-cscope') && executable('gtags')
-    let g:gutentags_modules += ['gtags_cscope']
+if executable('cscope')
+    let g:gutentags_modules += ['cscope']
 endif
+"if executable('gtags-cscope') && executable('gtags')
+"    let g:gutentags_modules += ['gtags_cscope']
+"endif
 
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中, 避免目录污染
 let s:vim_tags = expand('~/.cache/tags')
