@@ -62,4 +62,4 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set timeoutlen=150 " 默认值是1000 ms
+set timeoutlen=300 " 默认值是1000 ms

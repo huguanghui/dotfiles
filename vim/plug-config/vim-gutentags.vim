@@ -1,10 +1,20 @@
-" 设置 gutentags 模块
-let g:gutentags_modules = ['ctags', 'cscope']
+let g:gutentags_enabled = 1
+
 " 设置搜索工程的标志
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
 " 所生成的数据文件名称
 let g:gutentags_ctags_tagfile = '.tags'
+
+" 设置 gutentags 模块
+"let g:gutentags_modules = ['ctags', 'cscope']
+let g:gutentags_modules = []
+if executable('ctags')
+    let g:gutentags_modules += ['ctags']
+endif
+if executable('gtags-cscope') && executable('gtags')
+    let g:gutentags_modules += ['gtags_cscope']
+endif
 
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中, 避免目录污染
 let s:vim_tags = expand('~/.cache/tags')
@@ -15,8 +25,12 @@ if !isdirectory(s:vim_tags)
 endif
 
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
-let g:gutentags_ctags_extra_args = ['--c++-kinds=+pxI']
-let g:gutentags_ctags_extra_args = ['--c-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+
+" 禁用 gutentags 自动加载 gtags 数据库的行为
+let g:gutentags_auto_add_gtags_cscope = 0
 
 if has ("cscope")
     " 设置cscope和ctags对ctrl+] :ta和vim -t的兼容

@@ -23,3 +23,8 @@ source $HOME/.vim/plug-config/echodoc.vim
 if has_key(plugs, 'vimwiki')
  source $HOME/.vim/plug-config/vimwiki.vim
 endif
+
+" LeaderF
+if has_key(plugs, 'LeaderF')
+ source $HOME/.vim/plug-config/LeaderF.vim
+endif
