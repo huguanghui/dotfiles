@@ -55,4 +55,4 @@ let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 let g:UlitSnipsEditSplit='vertical'
 
 "跳转到定义处
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> 
+" nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> 
