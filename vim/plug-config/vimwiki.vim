@@ -24,6 +24,6 @@
 let g:vimwiki_list = [{'path': '~/vimwiki/work/', 'syntax': 'markdown', 'ext': '.md'},
                     \{'path': '~/vimwiki/personal/', 'syntax': 'markdown', 'ext': '.md'}]
 
-" nmap <leader>wl <Plug>VimwikiToggleListItem
+nmap <leader>wl <Plug>VimwikiToggleListItem
 
 let g:vimwiki_listsyms = ' ✗○◐✓'
