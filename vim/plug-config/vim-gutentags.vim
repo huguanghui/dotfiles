@@ -1,10 +1,17 @@
 let g:gutentags_enabled = 1
+" gutentags调试开关
+"let g:gutentags_trace = 1
 
 " 设置搜索工程的标志
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
 " 所生成的数据文件名称
 let g:gutentags_ctags_tagfile = '.tags'
+
+"let g:gutentags_file_list_command = 'ag --cpp --cc --asm -l --nocolor -g ""'
+"let g:gutentags_file_list_command = 'find . -type f -iregex ".*\.\(c\|cpp\|cc\|h\|asm\)$" -not -path "./.git/*"'
+" gutentags的文件过滤逻辑
+let g:gutentags_file_list_command = 'rg --files -t c -t cpp -t asm'
 
 " 设置 gutentags 模块
 "let g:gutentags_modules = ['ctags', 'cscope']
@@ -28,7 +35,7 @@ if !isdirectory(s:vim_tags)
 endif
 
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 
