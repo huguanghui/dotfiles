@@ -1,10 +1,17 @@
 let g:gutentags_enabled = 1
+" gutentags调试开关
+"let g:gutentags_trace = 1
 
 " 设置搜索工程的标志
 let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
 " 所生成的数据文件名称
 let g:gutentags_ctags_tagfile = '.tags'
+
+"let g:gutentags_file_list_command = 'ag --cpp --cc --asm -l --nocolor -g ""'
+"let g:gutentags_file_list_command = 'find . -type f -iregex ".*\.\(c\|cpp\|cc\|h\|asm\)$" -not -path "./.git/*"'
+" gutentags的文件过滤逻辑
+let g:gutentags_file_list_command = 'rg --files -t c -t cpp -t asm'
 
 " 设置 gutentags 模块
 "let g:gutentags_modules = ['ctags', 'cscope']
@@ -27,9 +34,14 @@ if !isdirectory(s:vim_tags)
     silent! call mkdir (s:vim_tags, 'p')
 endif
 
+" 行号,继承关系,访问权限,类型,常规信息
+" 结构体和类完整信息
 let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+" 函数原型, 变量声明扩展
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+
+" 如果使用 universal ctags 需要增加下面一行，老的 Exuberant-ctags不能加下一行
 let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 
 " 禁用 gutentags 自动加载 gtags 数据库的行为
