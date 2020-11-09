@@ -25,7 +25,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'townk/vim-autoclose'
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'thinca/vim-localrc'
 " 模糊查找插件
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
