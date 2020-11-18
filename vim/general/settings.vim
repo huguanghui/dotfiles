@@ -63,3 +63,14 @@ set nowritebackup
 set noswapfile
 
 set timeoutlen=300 " 默认值是1000 ms
+
+" 显示隐藏字符
+set listchars=
+set listchars+=space:·
+set listchars+=tab:¦\ 
+":set listchars+=tab:░\ 
+set listchars+=trail:·
+set listchars+=extends:»
+set listchars+=precedes:«
+set listchars+=nbsp:⣿
+set list

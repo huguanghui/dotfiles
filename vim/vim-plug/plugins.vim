@@ -11,6 +11,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-scripts/taglist.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+" 编辑格式统一插件
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sirver/ultisnips' 
 Plug 'huguanghui/vim-snippets' 
