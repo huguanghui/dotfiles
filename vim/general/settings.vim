@@ -73,4 +73,4 @@ set listchars+=trail:·
 set listchars+=extends:»
 set listchars+=precedes:«
 set listchars+=nbsp:⣿
-set list
+" set list

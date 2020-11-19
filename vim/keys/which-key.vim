@@ -65,6 +65,7 @@ let g:which_key_map.a = {
       \ 'v' : [':Codi'                   , 'virtual repl on'],
       \ 'V' : [':Codi!'                  , 'virtual repl off'],
       \ 'w' : [':StripWhitespace'        , 'strip whitespace'],
+      \ 'u' : [':set list!'        , 'list'],
       \ }
 
 " b is for buffer
