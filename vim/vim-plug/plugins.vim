@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'Valloric/YouCompleteMe', {'on': []}
 augroup load_ycm

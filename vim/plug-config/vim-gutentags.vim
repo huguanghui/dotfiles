@@ -29,6 +29,8 @@ endif
 " 将自动生成的 tags 文件全部放入 ~/.cache/tags 目录中, 避免目录污染
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
+let g:gutentags_exclude_project_root=['~/', '/usr/local']
+let g:gutentags_ctags_exclude=['.svn/*']
 
 if !isdirectory(s:vim_tags)
     silent! call mkdir (s:vim_tags, 'p')

@@ -15,6 +15,9 @@ source $HOME/.vim/keys/which-key.vim
 source $HOME/.vim/plug-config/ycm.vim
 source $HOME/.vim/plug-config/vim-gutentags.vim
 source $HOME/.vim/plug-config/vim-markdown.vim
+if has_key(plugs, 'vim-commentary')
+ source $HOME/.vim/plug-config/vim-commentary.vim
+endif
 if has_key(plugs, 'ale')
  source $HOME/.vim/plug-config/ale.vim
 endif
