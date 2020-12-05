@@ -33,3 +33,8 @@ endif
 if has_key(plugs, 'LeaderF')
  source $HOME/.vim/plug-config/LeaderF.vim
 endif
+
+" EasyMotion
+if has_key(plugs, 'vim-easymotion')
+ source $HOME/.vim/plug-config/vim-easymotion.vim
+endif
