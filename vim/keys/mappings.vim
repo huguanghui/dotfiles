@@ -15,6 +15,8 @@ noremap <C-l> <C-w>l
 " vmap <leader>c "+y
 " nmap <leader>v "+gp
 " nmap <leader>v <esc>"+gp
+vmap ,c y:call system("xsel -ib", getreg('"'))<CR>"'))
+nmap ,v :call setreg("\"",system("xsel -o"))<CR>p")")
 
 " 映射按键
 map S :w<CR>
