@@ -6,7 +6,8 @@ set nocompatible
 " 设置历史记录数
 set history=10000
 
-set clipboard=unnamedplus
+set clipboard=unnamed
+set clipboard+=unnamedplus
 
 set autoread
 
