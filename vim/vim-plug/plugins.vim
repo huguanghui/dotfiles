@@ -29,6 +29,12 @@ Plug 'tpope/vim-surround'
 Plug 'townk/vim-autoclose'
 "Plug 'dense-analysis/ale'
 Plug 'thinca/vim-localrc'
+" Zen mode
+Plug 'junegunn/goyo.vim'
+" Terminal
+Plug 'voldikss/vim-floaterm'
+" Debugging
+Plug 'puremourning/vimspector'
 " 模糊查找插件
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'mhinz/vim-signify'
