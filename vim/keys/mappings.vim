@@ -3,8 +3,8 @@
 "键盘命令
 " leader 键 设为空格
 let g:mapleader=" "
+
 nnoremap <Space> <Nop>
-inoremap jj <esc>`^
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -19,8 +19,18 @@ vmap ,c y:call system("xsel -ib", getreg('"'))<CR>"'))
 nmap ,v :call setreg("\"",system("xsel -o"))<CR>p")")
 
 " 映射按键
-map S :w<CR>
+inoremap jj <esc>`^
+inoremap kj <esc>`^
+inoremap jk <esc>`^
+
+" 保存
+nnoremap <silent> <C-s> :w<CR>
+" map S :w<CR>
+" 保存退出
+nnoremap <silent> <C-Q> :wq!<CR>
 map Q :q<CR>
+nnoremap <silent> <C-c> <Esc>
+
 map R :source $MYVIMRC<CR>
 map <F4> :tabnew .<CR>
 "nnoremap <leader>g :grep <c-r><c-w> */**<cr>
