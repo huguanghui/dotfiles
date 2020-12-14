@@ -24,10 +24,11 @@ inoremap kj <esc>`^
 inoremap jk <esc>`^
 
 " 保存
-nnoremap <silent> <C-s> :w<CR>
+" nnoremap <silent> <C-s> :w<CR>
+nnoremap <silent> ,s :w<CR>
 " map S :w<CR>
 " 保存退出
-nnoremap <silent> <C-Q> :wq!<CR>
+" nnoremap <silent> <C-Q> :wq!<CR>
 map Q :q<CR>
 nnoremap <silent> <C-c> <Esc>
 
