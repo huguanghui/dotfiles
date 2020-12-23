@@ -43,7 +43,8 @@ Plug 'junegunn/goyo.vim'
 " 终端
 Plug 'voldikss/vim-floaterm'
 " Debugging
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
+Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python --enable-go --enable-bash'}
 " 模糊查找插件
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'mhinz/vim-signify'
@@ -56,7 +57,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/DrawIt'
 " 撤销树功能
 Plug 'mbbill/undotree'
-"Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python --enable-go --enable-bash'}
 
 call plug#end()
 
