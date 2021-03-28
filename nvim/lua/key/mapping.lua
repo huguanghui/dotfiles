@@ -26,3 +26,6 @@ local def_map = {
 bind.nvim_load_mapping(def_map)
 
 vim.g.mapleader = ' '
+
+vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
+vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')

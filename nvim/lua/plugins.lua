@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
 	-- General Plugins
 	use 'liuchengxu/vim-which-key'	
 	use 'huguanghui/dashboard-nvim'
+	use 'psliwka/vim-smoothie'
 	use 'voldikss/vim-floaterm'
 	use 'terrortylor/nvim-comment'
 end)

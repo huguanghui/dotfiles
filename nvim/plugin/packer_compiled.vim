@@ -112,6 +112,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-polyglot"
   },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
   ["vim-which-key"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-which-key"
