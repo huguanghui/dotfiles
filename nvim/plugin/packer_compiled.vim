@@ -64,6 +64,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
+  ["nvim-lua-guide"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-lua-guide"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
@@ -79,6 +83,22 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-devicons"] = {
     loaded = true,

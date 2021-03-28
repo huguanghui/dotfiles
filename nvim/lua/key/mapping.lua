@@ -13,6 +13,8 @@ local def_map = {
 	["n|<C-j>"] = map_cmd('<C-w>j'):with_noremap(),
 	["n|<C-k>"] = map_cmd('<C-w>k'):with_noremap(),
 	["n|<Space>"] = map_cmd('<NOP>'):with_noremap():with_silent(),
+	["n|<TAB>"] = map_cr('bnext'):with_noremap():with_silent(),
+	["n|<S-TAB>"] = map_cr('bprevious'):with_noremap():with_silent(),
 	-- Insert
 	["i|jk"] = map_cmd('<Esc>'):with_noremap():with_silent(),
 	["i|kj"] = map_cmd('<Esc>'):with_noremap():with_silent(),

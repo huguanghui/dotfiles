@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
 
 	-- Autocomplete
 	use 'hrsh7th/nvim-compe'
+	use 'hrsh7th/vim-vsnip'
 	use 'huguanghui/friendly-snippets'
 
 	-- Color
@@ -38,6 +39,12 @@ return require('packer').startup(function(use)
 	-- Status Line and Bufferline
     use 'glepnir/galaxyline.nvim'
     use 'romgrk/barbar.nvim'
+
+    -- Telescope
+    use 'nvim-lua/popup.nvim'
+    use 'nvim-lua/plenary.nvim'
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-media-files.nvim'
 
 	-- Explorer
 	use 'kyazdani42/nvim-tree.lua'
