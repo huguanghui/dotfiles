@@ -70,11 +70,40 @@ let g:which_key_map.t = {
 	\ 'u' : [':FloatermNew ncdu', 'ncdu'],
 	\}
 
+" l is for language server protocol
+let g:which_key_map.l = {
+      \ 'name' : '+lsp' ,
+      \ 'a' : [':Lspsaga code_action'                , 'code action'],
+      \ 'A' : [':Lspsaga range_code_action'          , 'selected action'],
+      \ 'd' : [':Telescope lsp_document_diagnostics' , 'document diagnostics'],
+      \ 'D' : [':Telescope lsp_workspace_diagnostics', 'workspace diagnostics'],
+      \ 'f' : [':LspFormatting'                      , 'format'],
+      \ 'I' : [':LspInfo'                            , 'lsp info'],
+      \ 'v' : [':LspVirtualTextToggle'               , 'lsp toggle virtual text'],
+      \ 'l' : [':Lspsaga lsp_finder'                 , 'lsp finder'],
+      \ 'L' : [':Lspsaga show_line_diagnostics'      , 'line_diagnostics'],
+      \ 'o' : [':Vista!!'                            , 'outline'],
+      \ 'p' : [':Lspsaga preview_definition'         , 'preview definition'],
+      \ 'q' : [':Telescope quickfix'                 , 'quickfix'],
+      \ 'r' : [':Lspsaga rename'                          , 'rename'],
+      \ 'T' : [':LspTypeDefinition'                  , 'type defintion'],
+      \ 'x' : [':cclose'                             , 'close quickfix'],
+      \ 's' : [':Telescope lsp_document_symbols'     , 'document symbols'],
+      \ 'S' : [':Telescope lsp_workspace_symbols'    , 'workspace symbols'],
+      \ }
+      " \ 'H' : [':Lspsaga signature_help'             , 'signature_help'],
+
 " S is for Session
 let g:which_key_map.S = {
       \ 'name' : '+Session' ,
       \ 's' : [':SessionSave'           , 'save session'],
       \ 'l' : [':SessionLoad'           , 'load Session'],
+      \ }
+
+let g:which_key_map.R = {
+      \ 'name' : '+Find_Replace' ,
+      \ 'f' : [':Farr --source=vimgrep'    , 'file'],
+      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
       \ }
 
 call which_key#register('<Space>', "g:which_key_map")

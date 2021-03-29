@@ -22,6 +22,14 @@ return require('packer').startup(function(use)
 	-- Quality of life improvements
     use 'norcalli/nvim_utils'
 
+    -- LSP
+    use 'neovim/nvim-lspconfig'
+    use 'glepnir/lspsaga.nvim'
+    use 'onsails/lspkind-nvim'
+    use 'kosayoda/nvim-lightbulb'
+    use 'mfussenegger/nvim-jdtls'
+    use 'kabouzeid/nvim-lspinstall'
+
 	-- Autocomplete
 	use 'hrsh7th/nvim-compe'
 	use 'hrsh7th/vim-vsnip'
@@ -49,10 +57,18 @@ return require('packer').startup(function(use)
 	-- Explorer
 	use 'kyazdani42/nvim-tree.lua'
 
+	-- Navigation
+    use 'unblevable/quick-scope'
+    use 'phaazon/hop.nvim'
+
 	-- General Plugins
-	use 'liuchengxu/vim-which-key'	
+	use 'liuchengxu/vim-which-key'
 	use 'huguanghui/dashboard-nvim'
 	use 'psliwka/vim-smoothie'
 	use 'voldikss/vim-floaterm'
 	use 'terrortylor/nvim-comment'
+	use 'brooth/far.vim'
+	use 'windwp/nvim-autopairs'
+	use 'liuchengxu/vista.vim'
+
 end)

@@ -40,6 +40,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
   },
+  ["far.vim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/far.vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/friendly-snippets"
@@ -48,9 +52,25 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/hop.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/lspsaga.nvim"
+  },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
@@ -63,6 +83,22 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-jdtls"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-lightbulb"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-lua-guide"] = {
     loaded = true,
@@ -92,6 +128,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  ["quick-scope"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/quick-scope"
+  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
@@ -111,6 +151,10 @@ _G.packer_plugins = {
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-polyglot"
+  },
+  ["vim-smoothie"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-smoothie"
   },
   ["vim-vsnip"] = {
     loaded = true,
