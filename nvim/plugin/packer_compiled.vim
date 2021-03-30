@@ -163,6 +163,10 @@ _G.packer_plugins = {
   ["vim-which-key"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vim-which-key"
+  },
+  ["vista.vim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/vista.vim"
   }
 }
 
