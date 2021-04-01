@@ -16,6 +16,7 @@ require('plug-config/telescope')
 require('plug-config/floaterm')
 require('plug-config/lspkind')
 require('plug-config/hop')
+require('plug-config/vista')
 
 vim.cmd('source ~/.config/nvim/vimscript/whichkey.vim')
 
