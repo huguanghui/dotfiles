@@ -7,3 +7,8 @@
 - ftdetect  // 实现自己需要的文件类型检查插件
 - autoload  // 尽量延迟插件的加载
 - after     // 存放对vim内置插件的小小增强或改动
+
+## neovim
+
+
+
