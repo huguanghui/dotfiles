@@ -32,6 +32,10 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["DoxygenToolkit.vim"] = {
+    loaded = true,
+    path = "/home/hgh/.local/share/nvim/site/pack/packer/start/DoxygenToolkit.vim"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/hgh/.local/share/nvim/site/pack/packer/start/barbar.nvim"

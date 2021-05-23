@@ -30,6 +30,9 @@ return require('packer').startup(function(use)
     use 'mfussenegger/nvim-jdtls'
     use 'kabouzeid/nvim-lspinstall'
 
+	-- Doxygen Tool
+	use 'babaybus/DoxygenToolkit.vim'
+
 	-- Autocomplete
 	use 'hrsh7th/nvim-compe'
 	use 'hrsh7th/vim-vsnip'
