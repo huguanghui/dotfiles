@@ -57,6 +57,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-scripts/DrawIt'
 " 撤销树功能
 Plug 'mbbill/undotree'
+" Doxygen
+Plug 'babaybus/DoxygenToolkit.vim'
 
 call plug#end()
 
