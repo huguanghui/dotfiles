@@ -73,5 +73,6 @@ return require('packer').startup(function(use)
 	use 'brooth/far.vim'
 	use 'windwp/nvim-autopairs'
 	use 'liuchengxu/vista.vim'
+	use 'vimwiki/vimwiki'
 
 end)

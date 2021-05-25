@@ -18,6 +18,7 @@ require('plug-config/lspkind')
 require('plug-config/hop')
 require('plug-config/vista')
 
+vim.cmd('source ~/.config/nvim/vimscript/vimwiki.vim')
 vim.cmd('source ~/.config/nvim/vimscript/whichkey.vim')
 
 require('lsp')

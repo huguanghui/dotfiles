@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 " 注释
 Plug 'tpope/vim-commentary'
 " 状态栏
