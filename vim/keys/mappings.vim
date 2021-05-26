@@ -30,6 +30,14 @@ nnoremap <silent> ,s :w<CR>
 " 保存退出
 " nnoremap <silent> <C-Q> :wq!<CR>
 map Q :q<CR>
+" 实现 CTRL+s 保存文件
+nmap <C-S> :w!<CR>
+vmap <C-S> <C-C>:w!<CR>
+imap <C-S> <Esc>:w!<CR>
+nmap <C-Q> :q<CR>
+vmap <C-Q> <C-C>:q<CR>
+imap <C-Q> <Esc>:q<CR>
+
 nnoremap <silent> <C-c> <Esc>
 
 map R :source $MYVIMRC<CR>
