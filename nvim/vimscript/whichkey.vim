@@ -17,6 +17,8 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
+autocmd FileType vista,vista_kind nnoremap <buffer> <silent> \  :<c-u>call vista#finder#fzf#Run()<CR>
+
 let g:which_key_map['/'] = 'comment toggle'
 let g:which_key_map[';'] = [ ':Dashboard',  'home screen']
 let g:which_key_map['?'] = [ ':NvimTreeFindFile', 'find current file']
