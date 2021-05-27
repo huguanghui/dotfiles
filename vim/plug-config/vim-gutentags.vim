@@ -36,15 +36,14 @@ if !isdirectory(s:vim_tags)
     silent! call mkdir (s:vim_tags, 'p')
 endif
 
-" 行号,继承关系,访问权限,类型,常规信息
-" 结构体和类完整信息
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
-" 函数原型, 变量声明扩展
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+" 老的 Exuberant-ctags 不能加--extra=+q
+" let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
+let g:gutentags_ctags_extra_args = ['--fields=+niazS']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
-" 如果使用 universal ctags 需要增加下面一行，老的 Exuberant-ctags不能加下一行
-let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
+" 老的 Exuberant-ctags 不能加下一行
+"let g:gutentags_ctags_extra_args += ['--output-format=e-ctags']
 
 " 禁用 gutentags 自动加载 gtags 数据库的行为
 let g:gutentags_auto_add_gtags_cscope = 0
