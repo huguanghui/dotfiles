@@ -38,6 +38,7 @@ set incsearch
 set ignorecase
 set smartcase
 
+let g:nvcode_termcolors=256
 colorscheme nvcode
 
 " 语言设置
